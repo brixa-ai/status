@@ -1,31 +1,32 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime config — see https://upptime.js.org/docs/configuration
+owner: brixa-ai
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Web App
+    url: https://app.brixa.ai/
+  - name: Backend API
+    url: https://back.brixa.ai/api/hotels
+    expectedStatusCodes:
+      - 401
+  - name: Channels / Webhooks
+    url: https://channels.brixa.ai/health
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.brixa.ai
+  name: Brixa Status
+  introTitle: "**Brixa** production status"
+  introMessage: Live status of the Brixa platform. Checks run every 5 minutes from GitHub's infrastructure.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: History
+      href: /history
+    - title: App
+      href: https://app.brixa.ai
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Keep commit history light
+delete-old-commits: true
+commitMessages:
+  commitAuthorName: Upptime Bot
+  commitAuthorEmail: upptime@brixa.ai
