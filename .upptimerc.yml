@@ -14,6 +14,7 @@ sites:
 
 status-website:
   cname: status.brixa.ai
+  logoUrl: https://raw.githubusercontent.com/brixa-ai/status/master/assets/brixa-icon.svg
   name: Brixa Status
   introTitle: "**Brixa** production status"
   introMessage: Live status of the Brixa platform. Checks run every 5 minutes from GitHub's infrastructure.
