@@ -15,9 +15,10 @@ sites:
 status-website:
   cname: status.brixa.ai
   logoUrl: https://raw.githubusercontent.com/brixa-ai/status/master/assets/brixa-icon.svg
+  faviconSvg: https://raw.githubusercontent.com/brixa-ai/status/master/assets/brixa-icon.svg
   name: Brixa Status
   introTitle: "**Brixa** production status"
-  introMessage: Live status of the Brixa platform. Checks run every 5 minutes from GitHub's infrastructure.
+  introMessage: Live status of the Brixa platform. Automated checks run every 5 minutes from GitHub's infrastructure, independent of our production hosting.
   navbar:
     - title: Status
       href: /
@@ -25,6 +26,16 @@ status-website:
       href: /history
     - title: App
       href: https://app.brixa.ai
+  # Brand accent — recolour Upptime's theme variables to the Brixa logo green.
+  # Only overrides colour custom-properties (works in both light and dark themes);
+  # does not touch layout or build-hashed selectors. Semantic down/degraded
+  # colours are left as-is (red / amber).
+  css: |
+    :root {
+      --up-border-left-color: #57d15e;
+      --tag-up-background-color: #57d15e;
+      --nav-current-border-bottom-color: #57d15e;
+    }
 
 # Keep commit history light
 delete-old-commits: true
