@@ -37,7 +37,9 @@ status-website:
       --tag-up-background-color: #57d15e;
       --nav-current-border-bottom-color: #57d15e;
     }
-    nav ul li:last-child a {
+    /* :any-link lifts specificity above the scoped a.svelte-x.svelte-x rule
+       (0,2,1), whose 1.5rem 2rem padding otherwise wins and bloats the pill. */
+    nav ul li:last-child a:any-link {
       display: inline-flex;
       align-items: center;
       background: linear-gradient(135deg, #44d600, #5bccff);
@@ -50,7 +52,7 @@ status-website:
       border-bottom: none;
       transition: opacity 0.2s;
     }
-    nav ul li:last-child a:hover {
+    nav ul li:last-child a:any-link:hover {
       opacity: 0.92;
       border-bottom: none;
     }
