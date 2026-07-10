@@ -22,19 +22,37 @@ status-website:
   navbar:
     - title: Status
       href: /
-    - title: History
-      href: /history
-    - title: App
+    - title: Open Brixa
       href: https://app.brixa.ai
   # Brand accent — recolour Upptime's theme variables to the Brixa logo green.
   # Only overrides colour custom-properties (works in both light and dark themes);
   # does not touch layout or build-hashed selectors. Semantic down/degraded
   # colours are left as-is (red / amber).
+  # The last navbar item ("Open Brixa") is styled as the same gradient pill
+  # button as the help-center header CTA (help.brixa.ai). Structural selector
+  # (nav ul li:last-child a) is used because Svelte class hashes change per build.
   css: |
     :root {
       --up-border-left-color: #57d15e;
       --tag-up-background-color: #57d15e;
       --nav-current-border-bottom-color: #57d15e;
+    }
+    nav ul li:last-child a {
+      display: inline-flex;
+      align-items: center;
+      background: linear-gradient(135deg, #44d600, #5bccff);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 12px 28px rgba(64, 164, 255, 0.26), 0 4px 8px rgba(68, 214, 0, 0.16);
+      border-bottom: none;
+      transition: opacity 0.2s;
+    }
+    nav ul li:last-child a:hover {
+      opacity: 0.92;
+      border-bottom: none;
     }
 
 # Keep commit history light
