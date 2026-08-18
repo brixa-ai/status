@@ -52,5 +52,23 @@
     "timeMonth": 278,
     "timeYear": 287,
     "dailyMinutesDown": {}
+  },
+  {
+    "name": "PMS Integration",
+    "url": "https://pms.brixa.ai/health",
+    "icon": "https://icons.duckduckgo.com/ip3/pms.brixa.ai.ico",
+    "slug": "pms-integration",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 329,
+    "timeDay": 329,
+    "timeWeek": 329,
+    "timeMonth": 329,
+    "timeYear": 329,
+    "dailyMinutesDown": {}
   }
 ]
