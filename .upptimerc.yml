@@ -11,6 +11,8 @@ sites:
       - 401
   - name: Channels / Webhooks
     url: https://channels.brixa.ai/health
+  - name: PMS Integration
+    url: https://pms.brixa.ai/health
 
 status-website:
   cname: status.brixa.ai
