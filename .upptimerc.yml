@@ -59,6 +59,12 @@ status-website:
       border-bottom: none;
     }
 
+# No monitor uses $SECRET placeholders, so generated workflows get an empty
+# SECRETS_CONTEXT instead of the full `toJson(secrets)` dump (which GitHub's
+# malicious-workflow check held for approval from 2026-08-31 onward).
+# An explicit empty list is authoritative for uptime-monitor >= v1.43.11.
+secrets: []
+
 # Keep commit history light
 delete-old-commits: true
 commitMessages:
