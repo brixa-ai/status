@@ -6,9 +6,7 @@ sites:
   - name: Web App
     url: https://app.brixa.ai/
   - name: Backend API
-    url: https://back.brixa.ai/api/hotels
-    expectedStatusCodes:
-      - 401
+    url: https://back.brixa.ai/api/health/ready
   - name: Channels / Webhooks
     url: https://channels.brixa.ai/health
   - name: PMS Integration
