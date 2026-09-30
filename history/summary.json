@@ -19,7 +19,7 @@
   },
   {
     "name": "Backend API",
-    "url": "https://back.brixa.ai/api/hotels",
+    "url": "https://back.brixa.ai/api/health/ready",
     "icon": "https://icons.duckduckgo.com/ip3/back.brixa.ai.ico",
     "slug": "backend-api",
     "status": "up",
