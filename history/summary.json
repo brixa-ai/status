@@ -70,5 +70,41 @@
     "timeMonth": 210,
     "timeYear": 237,
     "dailyMinutesDown": {}
+  },
+  {
+    "name": "Payments",
+    "url": "https://payments.brixa.ai/health",
+    "icon": "https://icons.duckduckgo.com/ip3/payments.brixa.ai.ico",
+    "slug": "payments",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Queues (Bull Board)",
+    "url": "https://queues.brixa.ai/",
+    "icon": "https://icons.duckduckgo.com/ip3/queues.brixa.ai.ico",
+    "slug": "queues-bull-board",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
   }
 ]

@@ -13,6 +13,12 @@ sites:
     url: https://channels.brixa.ai/health
   - name: PMS Integration
     url: https://pms.brixa.ai/health
+  - name: Payments
+    url: https://payments.brixa.ai/health
+  - name: Queues (Bull Board)
+    url: https://queues.brixa.ai/
+    expectedStatusCodes:
+      - 401
 
 status-website:
   cname: status.brixa.ai
